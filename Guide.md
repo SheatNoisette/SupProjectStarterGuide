@@ -1,15 +1,17 @@
+# Projet Supérieur: Guide de survie
+
 Voici un petit condensé des problèmes rencontrés lors de notre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce rapport n’est pas un document officiel, mais un retour d’expérience. Lire ceci permettra d’éviter au moins 75% des erreurs classiques, libre à vous de les suivres ou non...
 
-# Problèmes courants
+## Problèmes courants
 
-## Git et GitLFS: 
+### Git et GitLFS: 
 __Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
 
 __Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. **Attention :** Ceci ne corrige pas nécessairement le problème.
 
 __Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installé.
 
-## Unity Colaborate
+### Unity Colaborate
 __Problème :__ Tout le monde peut publier ses changements. Mais il arrive que Unity perd le projet en cours de route.
 __Solution :__ Vérifier sur le Dashboard Unity si l’outil Colaborate est bel et bien activé.
 
@@ -20,15 +22,15 @@ __Solution :__ Désactiver et réactiver Colaborate
 __Problème:__ Unity semble avoir perdu la collaboration
 Solution: Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
 
-## Github et Gitlab: 
+### Github et Gitlab: 
 @TODO
 
 
-# Conseils à la réalisation de votre projet de jeu vidéo:
+## Conseils à la réalisation de votre projet de jeu vidéo:
 
 Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une compilation de conseils mis en forme de liste afin d'être plus lisible.
 
-## Pré-conception du jeu:
+### Pré-conception du jeu
 
 * __Une idée trop ambitieuse est une mauvaise idée.__ Vous ne chamboulerez pas le monde du jeu vidéo.
    
@@ -38,7 +40,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
   
 * __La première impression est importante, mais évitez de réaliser une coquille vide.__ La qualité de la modélisation 3d, des sprites 2d ou des cartes est tout aussi importante que le code. Essayez d'obtenir un bon équilibre entre le code et la qualité graphique.
 
-## Gestion d’équipe:
+### Gestion d’équipe
 
 * __Toujours aider une personne en difficulté.__ Bien sûr, celui - ci ne doit pas se reposer entièrement sur quelqu’un pour faire son travail à sa place.
 * __Vous avez le droit de ne pas savoir comment réaliser une chose particulière.__ Faites une rapide évaluation de chacun des membre de l'équipe afin d'exploiter les talents de chacun. Il est rare qu'une équipe soit parfaitement homogène.
@@ -46,7 +48,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
   
 * __Réaliser un planning, même incomplet / imprécis.__
 
-## Contrôle de version et gestion du code source :
+### Contrôle de version et gestion du code source :
 
 * __Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN. L’échange de clés USB est à proscrire, c’est une perte de temps.__ De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.
 
@@ -55,7 +57,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Fusionnez régulièrement les différentes branches de l’équipe.__ Si vous travaillez par branche, vous devez fusionner au minimum chaque semaines et vérifiez que tout fonctionne. Pensez aussi à mettre à jour ou à recréer des branches pour les membres de toute l’équipe.
 
-## Multijoueur :
+### Multijoueur :
 
 * __Si votre projet possède un mode multijoueur, celui - ci doit être implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de forte chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
 
@@ -63,7 +65,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Photon peut vous aider. Celui - ci dispose de nombreux tutoriels et d'une documentation correcte.
 * __Ne pas utiliser UNet.__ UNet est en cours d’abandon, il est possible que des fonctionnalitées ne fonctionne plus du jour au lendemain. (https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/)
 
-## Unity :
+### Unity :
 
 * __Éviter d’intégrer des assets venant de l’asset store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation si vous utilisez la collaboration d’Unity.
   
@@ -89,7 +91,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
   
 * __Si votre jeu comporte beaucoup d'éléments graphiques ou de scripts, l'exportation WebGL peut casser.__ Vous pouvez tomber sur une erreur de manque de mémoire après quelques minutes de jeu.
 
-## Code
+### Code
 
 * __Éviter de trop dépendre du code des autres.__ Essayez de séparer votre code du code des autres. Si une fonctionnalité repose beaucoup sur le travail d’un autre et que celui - ci s'effondre, vous aurez deux fois plus de boulot. Bien sûr, il y a des cas ou utiliser le code des autres est indispensable.
   
@@ -103,7 +105,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
 * __Il se sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux,__ c’est à dire du code qui est à première vue illisible mais fonctionnant correctement. 
 Mélanger du F# et C# est une mauvaise idée. Le C# est le seul langage "officiel" d'Unity.
 
-## Rapport de soutenance
+### Rapport de soutenance
 
 * __Ne pas sous estimer la durée de rédaction du rapport de soutenance.__ Pensez à commencer à rédiger le squelette du rapport au moins deux semaines en avance.
   
@@ -116,7 +118,7 @@ Mélanger du F# et C# est une mauvaise idée. Le C# est le seul langage "officie
 * __Utiliser un convertisseur OpenDocument/Word/Google Doc vers LaTex n’est pas une bonne idée.__ En revanche, vous pouvez rédiger votre document sur un logiciel de traitement de texte classique pour bénéficier d’un correcteur orthographique puis d'intégrer vos parties du rapport dans un document LaTex.
 * __Il est plus facile de créer, éditer et compiler des documents LaTex sur un système Unix (GNU/Linux, BSD ou mac Os) que sous Windows.__
 
-## La présentation
+### La présentation
 
 * __Une combinaison de touches permettant de tricher est recommandé.__ Si votre jeu est trop difficile, pensez à ajouter des codes de triche permettant de passer un niveau ou de gagner des vies.
 
@@ -127,13 +129,13 @@ Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et d
   
 * __Testez votre présentation sur un projecteur.__ Votre présentation est peut être magnifique, mais n'est pas forcément lisible sur un projecteur. N'hésitez pas à vous déplacer au fond de la salle afin de vérifier la bonne lisibilité de votre présentation.
 
-## Le site internet
+### Le site internet
 
 Le site internet n’est pas un élément à négliger pour votre projet. Celui - ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher plus ou moins le code source. En revanche, un site dynamique le permet. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll. Créer un outil sur mesure à partir de zéro n’est pas obligatoire. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site en Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de connaissances en HTML/CSS . Un cours interactif d’introduction est accessible ici : https://www.markdowntutorial.com/
 Attention, le Markdown est une spécification ouverte. Chaque développeur est libre de l’implémenter comme il le souhaite. En voici un court rappel:
 
 
-[ Markdown | Sortie |
+| Markdown | Sortie |
 | --- | --- |
 | `# Titre` | # Titre |
 `## Sous titre` | ## Sous titre

@@ -6,6 +6,7 @@ Un guide permettant de surmonter divers problèmes rencontrés lors de la réali
 Benoît “SheatNoisette” et Luca "iralorucrie" Corrieri
 
 # Licence
-![CC](http://creativecommons.org/licenses/by-nc/4.0/)
+
+![Creative Commons](http://creativecommons.org/licenses/by-nc/4.0/)
 
 Le document `Guide.md` est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International". Une copie traduite en Français est fournie dans le document `LICENSE.md`.
