@@ -102,7 +102,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
 
 * __Ne pas hésiter à utiliser l’héritage.__ Une arme, un pistolet par exemple, peut être le fils d’une classe abstraite appelée “Arme”.
 
-* __Il se sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux,__ c’est à dire du code qui est à première vue illisible mais fonctionnant correctement. 
+* __Il ne sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux,__ c’est à dire du code qui est à première vue illisible mais fonctionnant correctement. 
 Mélanger du F# et C# est une mauvaise idée. Le C# est le seul langage "officiel" d'Unity.
 
 ### Rapport de soutenance
@@ -131,7 +131,7 @@ Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et d
 
 ### Le site internet
 
-Le site internet n’est pas un élément à négliger pour votre projet. Celui - ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher plus ou moins le code source. En revanche, un site dynamique le permet. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll. Créer un outil sur mesure à partir de zéro n’est pas obligatoire. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site en Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de connaissances en HTML/CSS . Un cours interactif d’introduction est accessible ici : https://www.markdowntutorial.com/
+Le site internet n’est pas un élément à négliger pour votre projet. Celui - ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher le code source. En revanche, un site dynamique permet d'être modifié sans intervention sur le code source. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll. Créer un outil sur mesure à partir de zéro n’est pas obligatoire. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site en Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de connaissances en HTML/CSS . Un cours interactif d’introduction est accessible ici : https://www.markdowntutorial.com/
 Attention, le Markdown est une spécification ouverte. Chaque développeur est libre de l’implémenter comme il le souhaite. En voici un court rappel:
 
 
@@ -146,9 +146,9 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 
 Il est possible de mélanger plusieurs tags Markdown tel que : **__Texte en gras et en italique__**.
 
-Il est possible de louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que Dyjix ou AlwaysData. 
+Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que Dyjix ou AlwaysData. 
 
-Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. D'un autre côté, il est possible d'acheter un nom de domaine pour votre équipe mais cela n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tel que proposé par Freenom.
+Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tel que proposé par Freenom.
 
 # Petit guide pratique sur Git
 Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commandes les plus utilisées. 
