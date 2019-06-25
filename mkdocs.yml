@@ -1,0 +1,5 @@
+site_name: Guide de démarage
+
+theme:
+    name: null
+    custom_dir: 'theme/'
