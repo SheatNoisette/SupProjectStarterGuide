@@ -20,7 +20,7 @@ __Problème :__ Unity perd le projet en route, mais Colaborate est bel et bien a
 __Solution :__ Désactiver et réactiver Colaborate
 
 __Problème:__ Unity semble avoir perdu la collaboration
-Solution: Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
+__Solution:__ Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
 
 ### Github et Gitlab
 @TODO
@@ -102,8 +102,11 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
 
 * __Ne pas hésiter à utiliser l’héritage.__ Une arme, un pistolet par exemple, peut être le fils d’une classe abstraite appelée “Arme”.
 
-* __Il ne sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux,__ c’est à dire du code qui est à première vue illisible mais fonctionnant correctement. 
-Mélanger du F# et C# est une mauvaise idée. Le C# est le seul langage "officiel" d'Unity.
+* __Il ne sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux,__ c’est à dire du code qui est illisible mais fonctionnant correctement.
+
+* __Mélanger du F# et C# est une mauvaise idée.__ Le C# est le seul langage "officiel" d'Unity.
+
+* __Commentez votre code.__ 
 
 ### Rapport de soutenance
 
@@ -155,13 +158,13 @@ Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commande
 
 | Commande(s) | Effet |
 | --- | --- |
-| git add . | Ajouter tous les nouveaux fichiers et les fichiers modifiés. |
-| git status | Voir les fichiers modifiés ou nouvellement créés. |
-| git commit -m “MESSAGE” | Créer un nouveau commit étiqueté du message “MESSAGE” (Sans les “) |
-| git branch | Voir toutes les branches locales, c’est à dire les branches stockés sur votre ordinateur.|
-| git checkout -b BRANCHE | Créer une branche locale possédant le nom BRANCHE basée sur la branche actuelle. Il sera nécéssaire de faire ... |
-| git push origin BRANCHE | pour publier les changements. |
-| git branch -d BRANCHE |Supprimer la branche ‘BRANCHE’. |
+| `git add .` | Ajouter tous les nouveaux fichiers et les fichiers modifiés. |
+| `git status` | Voir les fichiers modifiés ou nouvellement créés. |
+| `git commit -m “MESSAGE”` | Créer un nouveau commit étiqueté du message “MESSAGE” (Sans les “) |
+| `git branch` | Voir toutes les branches locales, c’est à dire les branches stockés sur votre ordinateur.|
+| `git checkout -b BRANCHE` | Créer une branche locale possédant le nom BRANCHE basée sur la branche actuelle. Il sera nécéssaire de faire ... |
+| `git push origin BRANCHE` | pour publier les changements. |
+| `git branch -d BRANCHE` |Supprimer la branche ‘BRANCHE’. |
 
 Pour plus d’informations, consulter le manuel de Git.
 
