@@ -4,7 +4,7 @@ Voici un petit condensé des problèmes rencontrés lors de notre projet, la ré
 
 ## Problèmes courants
 
-### Git et GitLFS: 
+### Git et GitLFS
 __Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
 
 __Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. **Attention :** Ceci ne corrige pas nécessairement le problème.
@@ -22,11 +22,11 @@ __Solution :__ Désactiver et réactiver Colaborate
 __Problème:__ Unity semble avoir perdu la collaboration
 Solution: Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
 
-### Github et Gitlab: 
+### Github et Gitlab
 @TODO
 
 
-## Conseils à la réalisation de votre projet de jeu vidéo:
+## Conseils à la réalisation de votre projet de jeu vidéo
 
 Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une compilation de conseils mis en forme de liste afin d'être plus lisible.
 
@@ -48,7 +48,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
   
 * __Réaliser un planning, même incomplet / imprécis.__
 
-### Contrôle de version et gestion du code source :
+### Contrôle de version et gestion du code source
 
 * __Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN. L’échange de clés USB est à proscrire, c’est une perte de temps.__ De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.
 
@@ -57,7 +57,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Fusionnez régulièrement les différentes branches de l’équipe.__ Si vous travaillez par branche, vous devez fusionner au minimum chaque semaines et vérifiez que tout fonctionne. Pensez aussi à mettre à jour ou à recréer des branches pour les membres de toute l’équipe.
 
-### Multijoueur :
+### Multijoueur
 
 * __Si votre projet possède un mode multijoueur, celui - ci doit être implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de forte chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
 
@@ -65,7 +65,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Photon peut vous aider. Celui - ci dispose de nombreux tutoriels et d'une documentation correcte.
 * __Ne pas utiliser UNet.__ UNet est en cours d’abandon, il est possible que des fonctionnalitées ne fonctionne plus du jour au lendemain. (https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/)
 
-### Unity :
+### Unity
 
 * __Éviter d’intégrer des assets venant de l’asset store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation si vous utilisez la collaboration d’Unity.
   
