@@ -7,7 +7,8 @@ Voici un petit condensé des problèmes rencontrés lors de notre projet, la ré
 ### Git et GitLFS
 __Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
 
-__Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. **Attention :** Ceci ne corrige pas nécessairement le problème.
+__Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. 
+**Attention :** Ceci ne corrige pas nécessairement le problème.
 
 __Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installé.
 
@@ -80,7 +81,10 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
 * __Éviter les abus de tutoriels.__ Lire la documentation peut parfois bien plus vous aider.
   
 * __Compilez régulièrement une version hors éditeur (“Sand-alone”).__ Ce qui peut marcher sur l’éditeur d’Unity ne fonctionnera peut - être pas sur une version compilé à part.
+implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de forte chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
 
+* __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
+Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Photon peut vo
 * __Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.__ Il est recommandé de toujours posséder une version compilée fonctionnelle même si celle - ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombres: Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et d’activer “Autobuild”.
 
 * __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boiteuses. 
@@ -134,7 +138,7 @@ Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et d
 
 ### Le site internet
 
-Le site internet n’est pas un élément à négliger pour votre projet. Celui - ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher le code source. En revanche, un site dynamique permet d'être modifié sans intervention sur le code source. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll. Créer un outil sur mesure à partir de zéro n’est pas obligatoire. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site en Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de connaissances en HTML/CSS . Un cours interactif d’introduction est accessible ici : https://www.markdowntutorial.com/
+Le site internet n’est pas un élément à négliger pour votre projet. Celui - ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher le code source. En revanche, un site dynamique permet d'être modifié sans intervention sur le code source. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll permettant de réaliser un site statique. Créer un outil sur mesure à partir de zéro n’est pas obligatoire et peut prendre du temps. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site dans un langage de balisage plus pratique que l'HTML tel que le Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de connaissances en HTML/CSS . Un cours interactif d’introduction est accessible ici : (https://www.markdowntutorial.com/).
 Attention, le Markdown est une spécification ouverte. Chaque développeur est libre de l’implémenter comme il le souhaite. En voici un court rappel:
 
 
@@ -147,13 +151,18 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 `**Texte en gras**` | **Texte en gras**|
 | `__Texte en italique__` | __Texte en italique__ |
 
-Il est possible de mélanger plusieurs tags Markdown tel que : **__Texte en gras et en italique__**.
+Il est possible de combiner plusieurs tags Markdown en fonction des implémentations : `**__Texte en gras et en italique__**`.
 
 Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que Dyjix ou AlwaysData. 
 
 Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tel que proposé par Freenom.
 
-# Petit guide pratique sur Git
+**Remarques :**
+* __Pensez à faire des sauvegardes régulières de votre site.__ Un accident de votre côté ou de votre hébergeur peut tout à fait arriver.
+
+* __Prendre un serveur dédié pour votre site internet est inutile.__ Sauf si vous souhaitez réutiliser ce serveur plus tard.
+
+## Petit guide pratique sur Git
 Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commandes les plus utilisées. 
 
 | Commande(s) | Effet |
@@ -166,9 +175,9 @@ Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commande
 | `git push origin BRANCHE` | pour publier les changements. |
 | `git branch -d BRANCHE` |Supprimer la branche ‘BRANCHE’. |
 
-Pour plus d’informations, consulter le manuel de Git.
+Pour plus d’informations, veuillez consulter le manuel de Git.
 
-# Licence
+## Licence
 Ce travail est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International".
 
 Réalisé par Benoît “SheatNoisette” et Luca "iralorucrie" Corrieri.
