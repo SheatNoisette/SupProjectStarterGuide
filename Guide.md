@@ -81,7 +81,6 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Phot
 * __Éviter les abus de tutoriels.__ Lire la documentation peut parfois bien plus vous aider.
   
 * __Compilez régulièrement une version hors éditeur (“Sand-alone”).__ Ce qui peut marcher sur l’éditeur d’Unity ne fonctionnera peut - être pas sur une version compilé à part.
-implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de forte chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
 
 * __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
 Utiliser des Sockets directement est du suicide. Des bibliothèques tel que Photon peut vo
