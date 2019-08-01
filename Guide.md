@@ -2,31 +2,6 @@
 
 Voici un petit condensé des problèmes rencontrés lors de notre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce rapport n’est pas un document officiel, mais un retour d’expérience. Lire ceci permettra d’éviter au moins 75% des erreurs classiques, libre à vous de les suivres ou non...
 
-## Problèmes courants
-
-### Git et GitLFS
-__Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
-
-__Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. 
-**Attention :** Ceci ne corrige pas nécessairement le problème.
-
-__Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installé.
-
-### Unity Colaborate
-__Problème :__ Tout le monde peut publier ses changements. Mais il arrive que Unity perd le projet en cours de route.
-__Solution :__ Vérifier sur le Dashboard Unity si l’outil Colaborate est bel et bien activé.
-
-__Problème :__ Unity perd le projet en route, mais Colaborate est bel et bien activé
-
-__Solution :__ Désactiver et réactiver Colaborate
-
-__Problème:__ Unity semble avoir perdu la collaboration
-__Solution:__ Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
-
-### Github et Gitlab
-@TODO
-
-
 ## Conseils à la réalisation de votre projet de jeu vidéo
 
 Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une compilation de conseils mis en forme de liste afin d'être plus lisible.
@@ -175,6 +150,30 @@ Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commande
 | `git branch -d BRANCHE` |Supprimer la branche ‘BRANCHE’. |
 
 Pour plus d’informations, veuillez consulter le manuel de Git.
+
+### Github et Gitlab
+Pour votre projet, vous allez probablement utiliser Git. Git permet de travailler de pair-à-pair, mais par sécurité, il est recommandé de choisir une solution d'hébergement git pour le code source de votre projet. Les deux plus grandes plateformes sont Github et Gitlab. Chacune de ses plateformes ont des avantages mais aussi des contraintes. Le plus populaire est GIthub, hébergeant plus de 69 millions de projets. 
+
+## Problèmes courants
+### Git et GitLFS
+__Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
+
+__Première Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. 
+**Attention :** Ceci ne corrige pas nécessairement le problème.
+
+__Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installé.
+
+### Unity Colaborate
+__Problème :__ Tout le monde peut publier ses changements. Mais il arrive que Unity perd le projet en cours de route.
+__Solution :__ Vérifier sur le Dashboard Unity si l’outil Colaborate est bel et bien activé.
+
+__Problème :__ Unity perd le projet en route, mais Colaborate est bel et bien activé
+
+__Solution :__ Désactiver et réactiver Colaborate
+
+__Problème:__ Unity semble avoir perdu la collaboration
+__Solution:__ Cliquer sur ‘Start now’ sur l’onglet Colab, Unity va réessayer de vérifier les changements.
+
 
 ## Licence
 Ce travail est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International".
