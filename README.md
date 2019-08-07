@@ -1,5 +1,7 @@
-# Projet Supérieur: Guide de survie
-Un guide permettant de surmonter divers problèmes rencontrés lors de la réalisation d'un projet de jeu vidéo sous Unity3D. D'autres sujets sont abordés tel que LaTex, Markdown, Git ou encore Vim.
+# Projet Informatique : Guide de survie
+Un guide permettant de surmonter divers problèmes rencontrés lors de la réalisation d'un projet de jeu vidéo sous Unity3D. D'autres sujets sont abordés tels que LaTex, Markdown, Git ou encore Vim.
+
+Ce guide fut initialement écrit pour le projet informatique du S2 d'[Epita](https://www.epita.fr/) mais peut être adapté à d'autres projets scolaires de jeu vidéo fait avec Unity et impliquant également l'utilisation de Git et la rédaction de rapports avec LaTeX.
 
 # Auteurs
 
