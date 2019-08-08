@@ -9,7 +9,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 ### Pré-conception du jeu
 
 * __Une idée trop ambitieuse est une mauvaise idée.__ Vous ne chamboulerez pas le monde du jeu vidéo.
-   
+
 * __Un projet multijoueur en ligne peut s’avérer très complexe à mettre en place.__
   
 * __Se mettre en équipe avec une personne hors de son cercle d’ami peut s’avérer plus productif.__
@@ -60,7 +60,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.__ Il est recommandé de toujours posséder une version compilée et fonctionnelle de votre projet même si celle-ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombre : Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et activer “Autobuild”.
 
-* __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses. 
+* __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses.
   
 * __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal.
   
@@ -156,7 +156,7 @@ Pour plus d’informations, veuillez consulter [le manuel de Git](https://git-sc
 
 Pour votre projet, vous allez probablement utiliser Git. Git permet de travailler de pair-à-pair, mais par sécurité, il est recommandé de choisir une solution d'hébergement Git pour le code source de votre projet. Les deux plus grandes plateformes sont GitHub et GitLab. Chacune de ces plateformes a ses avantages mais aussi ses inconvénients. La plus populaire, GitHub, héberge plus de 69 millions de projets.
 
-Si l'on en reste strictement à la version gratuite de ces deux services (largement suffisante pour un projet scolaire en groupe), la différence majeure entre GitHub et GitLab est que ce dernier permet d'en faire un peu plus. Depuis peu la création de repos privées sur GitHub est devenue gratuite et illimitée mais uniquement pour les utilisateurs seuls (vous pouvez tout de même ajouter des collaborateurs) mais sur GitLab, non seulement la création de repos publiques et privées est illimitée mais elle est aussi ouverte aux organisations (groupe d'utilisateurs) ce qui est plus pratique pour un travail en groupe. L'autre avantage majeur de GitLab est l'intégration en continue (ou CI pour *Continuous Integration*), même si celle-ci n'est pas vraiment utile avec Unity, elle peut l'être pour un site web ou pour vos différents rapports rédigés en LaTeX. La CI intégrée à GitLab permet d'éxecuter et déployer votre application automatiquement à chaque mise à jour de votre code, ce qui peut s'avérer très utile pour déployer un site web statique sans avoir à l'héberger de manière classique. À noter que GitHub peut également héberger des sites web statiques (avec GitHub Pages) et faire de la CI (via des services tiers).
+Si l'on en reste strictement à la version gratuite de ces deux services (largement suffisante pour un projet scolaire en groupe), la différence majeure entre GitHub et GitLab est que ce dernier permet d'en faire un peu plus. Depuis peu la création de repos privées sur GitHub est devenue gratuite et illimitée mais uniquement pour les utilisateurs seuls (et jusqu'à trois collaborateurs) mais sur GitLab, non seulement la création de repos publiques et privées est illimitée mais elle est aussi ouverte aux organisations (groupe d'utilisateurs avec nombre de collaborateurs illimité) ce qui est plus pratique pour un travail en groupe. L'autre avantage majeur de GitLab est l'intégration en continue (ou CI pour *Continuous Integration*), même si celle-ci n'est pas vraiment utile avec Unity, elle peut l'être pour un site web ou pour vos différents rapports rédigés en LaTeX. La CI intégrée à GitLab permet d'éxecuter et déployer votre application automatiquement à chaque mise à jour de votre code, ce qui peut s'avérer très utile pour déployer un site web statique sans avoir à l'héberger de manière classique. À noter que GitHub peut également héberger des sites web statiques (avec GitHub Pages) et faire de la CI (via des services tiers).
 
 En résumé, le choix entre GitHub et GitLab est avant tout une question de **préférence**, tout ce qui peut être fait sur l'un des deux services peut aussi être fait sur l'autre et inversement. La formule gratuite de GitLab en propose un peu plus que celle de GitHub, mais cela ne vous empêchera pas de collaborer convenablement si vous préférez utiliser ce dernier.
 
