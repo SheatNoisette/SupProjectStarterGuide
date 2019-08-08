@@ -1,4 +1,4 @@
-# Projet Supérieur: Guide de survie
+# Projet Informatique : Guide de survie
 
 Voici un petit condensé des problèmes rencontrés lors de notre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce rapport n’est pas un document officiel, mais un retour d’expérience. Lire ceci permettra d’éviter au moins 75% des erreurs classiques, libre à vous de les suivre ou non...
 
