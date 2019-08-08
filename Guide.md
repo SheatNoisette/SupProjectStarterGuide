@@ -9,7 +9,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 ### Pré-conception du jeu
 
 * __Une idée trop ambitieuse est une mauvaise idée.__ Vous ne chamboulerez pas le monde du jeu vidéo.
-   
+
 * __Un projet multijoueur en ligne peut s’avérer très complexe à mettre en place.__
   
 * __Se mettre en équipe avec une personne hors de son cercle d’ami peut s’avérer plus productif.__
@@ -60,7 +60,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.__ Il est recommandé de toujours posséder une version compilée et fonctionnelle de votre projet même si celle-ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombre : Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et activer “Autobuild”.
 
-* __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses. 
+* __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses.
   
 * __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal.
   
@@ -83,7 +83,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Mélanger du F# et C# est une mauvaise idée.__ Le C# est le seul langage "officiel" d'Unity.
 
-* __Commentez votre code.__ 
+* __Commentez votre code.__
 
 ### Rapport de soutenance
 
@@ -115,7 +115,6 @@ Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et d
 Le site internet n’est pas un élément à négliger pour votre projet. Celui-ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher le code source. En revanche, un site dynamique permet d'être modifié sans intervention sur le code source. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll permettant de réaliser un site statique. Créer un outil sur mesure à partir de zéro n’est pas obligatoire et peut prendre du temps. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site dans un langage de balisage plus pratique que l'HTML tel que le Markdown (https://fr.wikipedia.org/wiki/Markdown) et donc de ne pas nécessiter de grosses connaissances en HTML/CSS. Un cours interactif d’introduction est accessible ici : (https://www.markdowntutorial.com/).
 Attention, le Markdown est une spécification ouverte. Chaque développeur est libre de l’implémenter comme il le souhaite. En voici un court rappel:
 
-
 | Markdown | Sortie |
 | --- | --- |
 | `# Titre` | # Titre |
@@ -127,17 +126,19 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 
 Il est possible de combiner plusieurs tags Markdown en fonction des implémentations : `**__Texte en gras et en italique__**`.
 
-Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que Dyjix ou AlwaysData. 
+Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que Dyjix ou AlwaysData.
 
 Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tels que ceux proposés par Freenom.
 
 **Remarques :**
+
 * __Pensez à faire des sauvegardes régulières de votre site.__ Un accident de votre côté ou de votre hébergeur peut tout à fait arriver.
 
 * __Prendre un serveur dédié pour votre site internet est inutile.__ Sauf si vous souhaitez réutiliser ce serveur plus tard.
 
 ## Petit guide pratique sur Git
-Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commandes les plus utilisées. 
+
+Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commandes les plus utilisées.
 
 | Commande(s) | Effet |
 | --- | --- |
@@ -152,18 +153,26 @@ Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commande
 Pour plus d’informations, veuillez consulter [le manuel de Git](https://git-scm.com/docs).
 
 ### GitHub et GitLab
-Pour votre projet, vous allez probablement utiliser Git. Git permet de travailler de pair-à-pair, mais par sécurité, il est recommandé de choisir une solution d'hébergement Git pour le code source de votre projet. Les deux plus grandes plateformes sont GitHub et GitLab. Chacune de ses plateformes ont des avantages mais aussi des contraintes. Le plus populaire, GitHub, héberge plus de 69 millions de projets. 
 
-## Problèmes courants
-### Git et GitLFS
+Pour votre projet, vous allez probablement utiliser Git. Git permet de travailler de pair-à-pair, mais par sécurité, il est recommandé de choisir une solution d'hébergement Git pour le code source de votre projet. Les deux plus grandes plateformes sont GitHub et GitLab. Chacune de ces plateformes a ses avantages mais aussi ses inconvénients. La plus populaire, GitHub, héberge plus de 69 millions de projets.
+
+Si l'on en reste strictement à la version gratuite de ces deux services (largement suffisante pour un projet scolaire en groupe), la différence majeure entre GitHub et GitLab est que ce dernier permet d'en faire un peu plus. Depuis peu la création de repos privées sur GitHub est devenue gratuite et illimitée mais uniquement pour les utilisateurs seuls (et jusqu'à trois collaborateurs) mais sur GitLab, non seulement la création de repos publiques et privées est illimitée mais elle est aussi ouverte aux organisations (groupe d'utilisateurs avec nombre de collaborateurs illimité) ce qui est plus pratique pour un travail en groupe. L'autre avantage majeur de GitLab est l'intégration en continue (ou CI pour *Continuous Integration*), même si celle-ci n'est pas vraiment utile avec Unity, elle peut l'être pour un site web ou pour vos différents rapports rédigés en LaTeX. La CI intégrée à GitLab permet d'éxecuter et déployer votre application automatiquement à chaque mise à jour de votre code, ce qui peut s'avérer très utile pour déployer un site web statique sans avoir à l'héberger de manière classique. À noter que GitHub peut également héberger des sites web statiques (avec GitHub Pages) et faire de la CI (via des services tiers).
+
+En résumé, le choix entre GitHub et GitLab est avant tout une question de **préférence**, tout ce qui peut être fait sur l'un des deux services peut aussi être fait sur l'autre et inversement. La formule gratuite de GitLab en propose un peu plus que celle de GitHub, mais cela ne vous empêchera pas de collaborer convenablement si vous préférez utiliser ce dernier.
+
+### Problèmes courants
+
+#### Git et GitLFS
+
 __Problème:__ Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.
 
-__Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau. 
+__Solution 1:__ Supprimer et ajouter manuellement les fichiers à nouveau.
 **Attention :** Ceci ne corrige pas nécessairement le problème.
 
 __Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installée.
 
-### Unity Collaborate
+#### Unity Collaborate
+
 __Problème :__ Tout le monde peut publier ses changements. Mais il arrive que Unity perde le projet en cours de route.
 __Solution :__ Vérifier sur le Dashboard Unity si l’outil Collaborate est bel et bien activé.
 
@@ -173,8 +182,8 @@ __Solution :__ Désactiver et réactiver Collaborate.
 __Problème:__ Unity semble avoir perdu la collaboration.
 __Solution:__ Cliquer sur ‘Start now’ sur l’onglet Collab, Unity va réessayer de vérifier les changements.
 
-
 ## Licence
+
 Ce travail est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International".
 
 Rédigé par Benoît “SheatNoisette” et Luca "iralorucrie" Corrieri.
