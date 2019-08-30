@@ -1,2 +1,4 @@
 site/
 docs/
+env/
+.DS_Store

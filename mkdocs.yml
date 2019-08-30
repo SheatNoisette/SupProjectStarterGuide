@@ -1,5 +1,5 @@
-site_name: Guide de démarage
+site_name: Guide de démarage projet S2
 
-theme:
-    name: null
-    custom_dir: 'theme/'
+theme: readthedocs
+repo_url: https://github.com/SheatNoisette/SupProjectStarterGuide
+copyright: 'CC BY NC 4.0 - Benoît M. et Luca C. - 2019'
