@@ -186,4 +186,4 @@ __Solution:__ Cliquer sur ‘Start now’ sur l’onglet Collab, Unity va réess
 
 Ce travail est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International".
 
-Rédigé par Benoît “SheatNoisette” et Luca "iralorucrie" Corrieri.
+Rédigé par [Benoît “SheatNoisette”](https://github.com/SheatNoisette) et [Luca "iralorucrie" Corrieri](https://github.com/corrieriluca).
