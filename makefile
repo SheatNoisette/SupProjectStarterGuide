@@ -7,3 +7,4 @@ site: clean
 
 clean:
 	rm -rf site/
+	rm -rf docs/
