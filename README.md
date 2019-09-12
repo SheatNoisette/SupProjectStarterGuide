@@ -12,6 +12,6 @@ Ce guide fut initialement écrit pour le projet informatique du S2 d'[Epita](htt
 
 # Licence
 
-![Creative Commons](http://creativecommons.org/licenses/by-nc/4.0/)
+![Creative Commons](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
-Le document `Guide.md` est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International". Une copie traduite en Français est fournie dans le document `LICENSE.md`.
+Le document `Guide.md` est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International" (CC BY NC 4.0). Une copie traduite en Français est fournie dans le document ![`LICENSE.md`](LICENSE.md).
