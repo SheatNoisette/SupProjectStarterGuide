@@ -3,3 +3,8 @@ site_name: Guide de démarage projet S2
 theme: readthedocs
 repo_url: https://github.com/SheatNoisette/SupProjectStarterGuide
 copyright: 'CC BY NC 4.0 - Benoît M. et Luca C. - 2019'
+
+nav:
+- Introduction: 'index.md'
+- Guide: 'guide.md'
+- Licence: 'license.md'
