@@ -8,6 +8,8 @@ Ce guide fut initialement écrit pour le projet informatique du S2 d'[Epita](htt
 
 [Benoît “SheatNoisette”](https://github.com/SheatNoisette) et [Luca "iralorucrie" Corrieri](https://github.com/corrieriluca).
 
+Remerciements particuliers à [EPITA.it](https://epita.it/) pour fournir gracieusement le sous-domaine [s2guide.epita.it](https://s2guide.epita.it/).
+
 # Licence
 
 ![Creative Commons](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
