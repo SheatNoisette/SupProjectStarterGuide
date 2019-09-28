@@ -6,7 +6,7 @@ Ce guide fut initialement écrit pour le projet informatique du S2 d'[Epita](htt
 
 # Auteurs
 
-[Benoît “SheatNoisette”](https://github.com/SheatNoisette) et [Luca "iralorucrie" Corrieri](https://github.com/corrieriluca).
+[Benoît “SheatNoisette” M.](https://github.com/SheatNoisette) et [Luca “iralorucrie” Corrieri](https://github.com/corrieriluca).
 
 Remerciements particuliers à [EPITA.it](https://epita.it/) pour fournir gracieusement le sous-domaine [s2guide.epita.it](https://s2guide.epita.it/).
 
