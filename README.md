@@ -1,6 +1,6 @@
 # Projet Informatique : Guide de survie
 
-Visiter le site : https://sheatnoisette.github.io/SupProjectStarterGuide/
+Visiter le site : https://sheatnoisette.github.io/SupProjectStarterGuide/ ou https://s2guide.epita.it
 
 Un guide permettant de surmonter divers problèmes rencontrés lors de la réalisation d'un projet de jeu vidéo sous Unity3D. D'autres sujets sont abordés tels que LaTeX, Markdown, Git ou encore Vim.
 
@@ -8,7 +8,7 @@ Ce guide fut initialement écrit pour le projet informatique du S2 d'[Epita](htt
 
 # Auteurs
 
-[Benoît “SheatNoisette”](https://github.com/SheatNoisette) et [Luca "iralorucrie" Corrieri](https://github.com/corrieriluca).
+[Benoît “SheatNoisette” M.](https://github.com/SheatNoisette) et [Luca "iralorucrie" Corrieri](https://github.com/corrieriluca).
 
 # Licence
 
