@@ -8,7 +8,7 @@ copyright: 'CC BY NC 4.0 - Benoît M. et Luca C. - 2019'
 
 theme:
     name: 'material'
-    # custom_dir: 'custom_theme' # to be added for Matomo Analytics support
+    custom_dir: 'custom_theme' # for Matomo Analytics support
     language: fr
 
 nav:

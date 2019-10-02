@@ -95,7 +95,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
   
 * __LaTeX est à la fois votre ami et votre pire ennemi.__ LaTeX met en forme automatiquement votre document. Il est recommandé de ne pas essayer de “forcer” une mise en forme particulière sauf si celui-ci génére mal une partie de votre document (un tableau par exemple).
 
-* __Un dépôt Git, Mercurial ou SVN peut être très utile pour les rapports.__ En effet, ces outils peuvent être très puissants sur des fichiers textes. Dans la majorité des cas, il sera aisé de fusionner des branches. Une fusion manuelle est normalement simple. De plus, GitLab ou GitHub proposent des outils de fusions complets, sans mettre directement la main à la pâte à l’aide de Vim ou Emacs. Mais si Git vous effraie, vous pouvez utiliser un éditeur de document LaTeX en ligne tel que [Overleaf](https://fr.overleaf.com).
+* __Un dépôt Git, Mercurial ou SVN peut être très utile pour les rapports.__ En effet, ces outils peuvent être très puissants sur des fichiers textes. Dans la majorité des cas, il sera aisé de fusionner des branches. Une fusion manuelle est normalement simple. De plus, GitLab ou GitHub proposent des outils de fusions complets en ligne, il existe aussi le logiciel GitKraken pour le faire en local sans mettre directement la main à la pâte à l’aide de Vim ou Emacs. Mais si Git vous effraie, vous pouvez utiliser un éditeur de document LaTeX en ligne tel que [Overleaf](https://fr.overleaf.com).
 
 * __Utiliser un convertisseur OpenDocument/Word/Google Doc vers LaTeX n’est pas une bonne idée.__ En revanche, vous pouvez rédiger votre document sur un logiciel de traitement de texte classique pour bénéficier d’un correcteur orthographique puis intégrer vos parties du rapport dans un document LaTeX.
 
@@ -128,9 +128,9 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 
 Il est possible de combiner plusieurs tags Markdown en fonction des implémentations : `**_Texte en gras et en italique_**`.
 
-Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner sur des alternatives gratuites tel que [Dyjix](https://www.dyjix.eu) ou [AlwaysData](https://www.alwaysdata.com/fr/). Enfin, considérez [GitHub Pages](https://pages.github.com) et [GitLab Pages](https://about.gitlab.com/product/pages/), très utiles si votre site web est statique.
+Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner vers des alternatives gratuites tel que [Dyjix](https://www.dyjix.eu) ou [AlwaysData](https://www.alwaysdata.com/fr/). Enfin, considérez [GitHub Pages](https://pages.github.com) et [GitLab Pages](https://about.gitlab.com/product/pages/), très utiles si votre site web est statique.
 
-Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tels que ceux proposés par Freenom.
+Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tels que ceux proposés par [Freenom](https://www.freenom.com/).
 
 **Remarques :**
 
