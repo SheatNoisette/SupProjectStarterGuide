@@ -14,4 +14,5 @@ theme:
 nav:
 - Introduction: 'index.md'
 - Guide: 'guide.md'
+- Liens utiles: 'useful-links.md'
 - Licence: 'license.md'

@@ -1,6 +1,6 @@
 # Projet Informatique : Guide de survie
 
-Voici un petit condensé des problèmes rencontrés lors de notre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce rapport n’est pas un document officiel, mais un retour d’expérience. Lire ceci permettra d’éviter au moins 75% des erreurs classiques, libre à vous de les suivre ou non...
+Voici un petit condensé des problèmes que vous pourriez rencontrer lors de votre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce guide n’est pas un document officiel, mais un retour d’expérience. Lire ceci vous permettra d’éviter au moins 75% des erreurs classiques.
 
 ## 1. Conseils à la réalisation de votre projet de jeu vidéo
 
@@ -19,16 +19,18 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 ### 1.2 Gestion d’équipe
 
 * __Toujours aider une personne en difficulté.__ Bien sûr, celle-ci ne doit pas se reposer entièrement sur quelqu’un pour faire son travail à sa place.
+
 * __Vous avez le droit de ne pas savoir comment réaliser une chose en particulier.__ Faites une rapide évaluation de chacun des membres de l'équipe afin d'exploiter les talents de chacun. Il est rare qu'une équipe soit parfaitement homogène.
+
 * __Discord, IRC ou Slack ne permettent pas toujours de communiquer efficacement.__ Privilégiez un endroit calme où toute l’équipe peut s’installer et échanger, surtout lors des périodes de soutenances.
   
-* __Réaliser un planning, même incomplet / imprécis.__
+* __Réaliser un planning, même incomplet ou imprécis est essentiel.__ Il vous sera demander d'en faire un dans votre cahier des charges au tout début de votre projet, alors autant essayer de s'y tenir un maximum.
 
 ### 1.3 Contrôle de version et gestion du code source
 
 * __Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN ou Unity Collaborate. L’échange de clés USB est à proscrire, c’est une perte de temps.__ De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.
 
-* __Ne travaillez pas sur la branche principale.__ Il est courant et “plus aisé” de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par personne.
+* __Ne travaillez pas sur la branche principale (Git).__ Il est courant et “plus aisé” de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par personne.
 
 * __Faites des push réguliers.__
 
@@ -40,13 +42,14 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
 Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [Photon](https://www.photonengine.com/en-us/Photon) peuvent vous aider. Celle-ci dispose de nombreux tutoriels et d'une documentation correcte.
+
 * __N'utilisez pas UNet.__ UNet est en cours d’abandon, il est possible que des fonctionnalitées ne fonctionne plus du jour au lendemain. (https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/)
 
 ### 1.5 Unity
 
-* __Évitez d’intégrer des assets venant de l’Asset Store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation si vous utilisez la collaboration d’Unity.
+* __Évitez d’intégrer des assets venant de l’Asset Store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation si vous utilisez Unity Collab.
 
-* __Réaliser des assets pour votre jeu peut prendre du temps.__ Vous pouvez prendre les assets libre de droits sur des sites internets tel que [OpenGameArt](https://opengameart.org/) ou [FreeSound](https://freesound.org/). 
+* __Réaliser des assets pour votre jeu peut prendre du temps.__ Vous pouvez prendre les assets libres de droit sur des sites internets tel que [OpenGameArt](https://opengameart.org/) ou [FreeSound](https://freesound.org/). 
 
 * __Si vous avez des messages d’erreur sur l’outil de Collaboration d’Unity sans rien modifier, vérifiez si les serveurs sont hors-ligne et évitez de faire des push.__ Des doublons de commits peuvent apparaître.
   
@@ -66,7 +69,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
   
 * __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal. Pensez à désactiver les ["lightmaps"](https://docs.unity3d.com/Manual/Lightmapping.html) et à retirer les cartes de jeu que vous n'utilisez pas afin d'accélérer la compilation de dernière minute de votre jeu.
   
-* __Forcez vous à garder une structure de dossier cohérente.__ Il n’y a rien de plus énervant que d’avoir des assets en double ou des scripts dans des dossiers de modèles 3D. On s’y perd rapidement.
+* __Forcez vous à garder une structure de dossier cohérente.__ Un projet Unity peut aisément accumuler des centaines et centaines de fichiers. Il n’y a rien de plus énervant que d’avoir des assets en double ou des scripts dans des dossiers de modèles 3D. On s’y perd rapidement.
   
 * __Si votre jeu comporte beaucoup d'éléments graphiques ou de scripts, l'exportation WebGL peut casser.__ Vous pouvez tomber sur une erreur de manque de mémoire après quelques minutes de jeu.
 
@@ -81,17 +84,17 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __N'hésitez pas à utiliser l’héritage.__ Une arme, un pistolet par exemple, peut être le fils d’une classe abstraite appelée “Arme”.
 
-* __Il ne sert à rien d’optimiser prématurément votre code. Du “code qui marche” est également dangereux__ c’est à dire du code qui est illisible mais fonctionnant correctement.
+* __Il ne sert à rien d’optimiser prématurément votre code. Du code “qui marche” est également dangereux,__ c’est à dire du code qui est illisible mais fonctionnant correctement.
 
 * __Mélanger du F# et C# est une mauvaise idée.__ Le C# est le seul langage "officiel" d'Unity.
 
 * __Commentez votre code.__
 
-### 1.7 Rapport de soutenance
+### 1.7 Rapports de soutenance
 
-* __Ne sous estimez pas la durée de rédaction du rapport de soutenance.__ Pensez à commencer à rédiger le squelette du rapport au moins deux semaines à l'avance.
+* __Ne sous estimez pas la durée de rédaction des rapports de soutenance.__ Pensez à commencer à rédiger le squelette du rapport au moins deux semaines à l'avance.
   
-* __Une bibliographie ou des sources sont recommandées.__
+* __Une bibliographie ou des sources sont fortement recommandées.__
   
 * __LaTeX est à la fois votre ami et votre pire ennemi.__ LaTeX met en forme automatiquement votre document. Il est recommandé de ne pas essayer de “forcer” une mise en forme particulière sauf si celui-ci génére mal une partie de votre document (un tableau par exemple).
 
@@ -101,16 +104,20 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Il est plus facile de créer, éditer et compiler des documents LaTeX sur un système Unix (GNU/Linux, BSD ou macOS) que sous Windows.__
 
-### 1.8 La présentation
+### 1.8 Les soutenances
 
-* __Une combinaison de touches permettant de tricher est recommandée.__ Si votre jeu est trop difficile, pensez à ajouter des codes de triche permettant de passer un niveau ou de gagner des vies.
+* __Des combinaisons de touches permettant de tricher sont recommandées.__ Si votre jeu est trop difficile, pensez à ajouter des codes de triche permettant de passer un niveau ou de gagner des vies. Cependant, n'en abusez pas, les examinateurs pourraient être amenés à penser que votre jeu ne fonctionne pas correctement.
+
+* __Faites une démonstration de votre jeu dès la première soutenance.__ Celle-ci a généralement lieu avant ou après les midterms du S2, votre jeu peut ne pas encore être avancé et encore très brouillon, mais en faire une démonstration, aussi succincte soit-elle, reste essentiel pour illustrer vos propos.
 
 * __Découpez logiquement votre démonstration.__ Si vous choisissez une démo-présentation pour la soutenance finale, c'est à dire que votre jeu est la présentation, décrivez les éléments du jeu dans l'ordre tel que vous le voyez. Présentez ce que le jury voit, introduisez au fur et à mesure les fonctionnalités de votre jeu. Un exemple : vous montrez que vous avez une caméra pouvant être déplacée avec la souris, ensuite que le joueur peut se déplacer et enfin courir. De plus il est important de scénariser votre démonstration afin d'éviter les blancs ou les oublis.
-Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et des diapositives.
+Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et des éventuelles diapositives. Pensez également à la présentation du mode multijoueur.
 
 * __Beaucoup de projecteurs et de salles sont toujours câblés en VGA.__ Pensez à amener un adaptateur HDMI / DisplayPort vers VGA, ce connecteur commence à s'effacer des ordinateurs portables.
   
 * __Testez votre présentation sur un projecteur.__ Votre présentation est peut être magnifique, mais n'est pas forcément lisible sur un projecteur. N'hésitez pas à vous déplacer au fond de la salle afin de vérifier la bonne lisibilité de votre présentation.
+
+* __Préparez vous également à présenter votre jeu en anglais.__ Même si vous n'êtes pas étudiant en section internationale, vous aurez à présenter une "seconde soutenance finale" plus courte et concentrée sur le jeu en lui-même comptant dans votre moyenne d'Anglais TIM.
 
 ### 1.9 Le site internet
 
@@ -178,7 +185,6 @@ __Solution 2:__ Refaire un repo et vérifier que tous les membres de l’équipe
 #### Unity Collaborate
 
 __Problème :__ Tout le monde peut publier ses changements. Mais il arrive que Unity perde le projet en cours de route.
-
 __Solution :__ Vérifier sur le Dashboard Unity si l’outil Collaborate est bel et bien activé.
 
 __Problème :__ Unity perd le projet en route, mais Collaborate est bel et bien activé.
