@@ -1,5 +1,5 @@
-site_name: Guide de démarrage projet S2
-site_description: Un guide pour bien gérer son projet de S2 à EPITA
+site_name: "Projet de S2 : Guide de survie"
+site_description: "Un guide pour bien gérer son projet de S2 à EPITA"
 site_url: https://s2guide.epita.it/
 
 repo_name: SheatNoisette/SupProjectStarterGuide
