@@ -24,7 +24,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Discord, IRC ou Slack ne permettent pas toujours de communiquer efficacement.__ Privilégiez un endroit calme où toute l’équipe peut s’installer et échanger, surtout lors des périodes de soutenances.
   
-* __Réaliser un planning, même incomplet ou imprécis est essentiel.__ Il vous sera demander d'en faire un dans votre cahier des charges au tout début de votre projet, alors autant essayer de s'y tenir un maximum.
+* __Réaliser un planning, même incomplet ou imprécis est essentiel.__ Il vous sera demandé d'en faire un dans votre cahier des charges au tout début de votre projet, alors autant essayer de s'y tenir un maximum.
 
 ### 1.3 Contrôle de version et gestion du code source
 
