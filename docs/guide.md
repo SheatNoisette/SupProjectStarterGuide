@@ -143,7 +143,7 @@ Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordi
 
 * __Pensez à faire des sauvegardes régulières de votre site.__ Un accident de votre côté ou de votre hébergeur peut tout à fait arriver.
 
-* __Prendre un serveur dédié pour votre site internet est inutile.__ Sauf si vous souhaitez réutiliser ce serveur plus tard.
+* __Prendre un serveur dédié ou virtuel (VPS) pour votre site internet est inutile.__ Sauf si vous souhaitez réutiliser ce serveur plus tard.
 
 ## 2. Gestion de versions
 
