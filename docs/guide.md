@@ -126,14 +126,15 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 
 | Markdown | Sortie |
 | --- | --- |
-| `# Titre` | # Titre |
-`## Sous titre` | ## Sous titre
-| `### Sous sous titre` | ### Sous sous titre
+| `# Titre` | <h1 style="margin: 0;">Titre</h1> |
+`## Sous-titre` | <h2 style="margin: 0;">Sous-titre</h2>
+| `### Sous-sous-titre` | <h3 style="margin: 0;">Sous-sous-titre</h3>
 | `Texte sans mise en forme particulière` | Texte sans mise en forme particulière |
-`**Texte en gras**` | **Texte en gras**|
-| `_Texte en italique_` | _Texte en italique_ |
+| `*Texte en italique*` ou `_Texte en italique_` | _Texte en italique_ |
+| `**Texte en gras**` ou `__Texte en gras__` | __Texte en gras__|
+| `**_Texte en gras et en italique_**` | **_Texte en gras et en italique_** |
 
-Il est possible de combiner plusieurs tags Markdown en fonction des implémentations : `**_Texte en gras et en italique_**`.
+Il est en effet possible de combiner plusieurs tags Markdown en fonction des implémentations comme avec le texte en gras italique (voir tableau ci-dessus).
 
 Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner vers des alternatives gratuites tel que [Dyjix](https://www.dyjix.eu) ou [AlwaysData](https://www.alwaysdata.com/fr/). Enfin, considérez [GitHub Pages](https://pages.github.com) et [GitLab Pages](https://about.gitlab.com/product/pages/), très utiles si votre site web est statique.
 
