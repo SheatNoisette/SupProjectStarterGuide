@@ -132,9 +132,9 @@ Attention, le Markdown est une spécification ouverte. Chaque développeur est l
 | `Texte sans mise en forme particulière` | Texte sans mise en forme particulière |
 | `*Texte en italique*` ou `_Texte en italique_` | _Texte en italique_ |
 | `**Texte en gras**` ou `__Texte en gras__` | __Texte en gras__|
-| `**_Texte en gras et en italique_**` | **_Texte en gras et en italique_** |
+| `***Texte en gras et en italique***` | **_Texte en gras et en italique_** |
 
-Il est en effet possible de combiner plusieurs tags Markdown en fonction des implémentations comme avec le texte en gras italique (voir tableau ci-dessus).
+Il est également possible de combiner plusieurs tags Markdown en fonction des implémentations : `**_Texte en gras et en italique_**`
 
 Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner vers des alternatives gratuites tel que [Dyjix](https://www.dyjix.eu) ou [AlwaysData](https://www.alwaysdata.com/fr/). Enfin, considérez [GitHub Pages](https://pages.github.com) et [GitLab Pages](https://about.gitlab.com/product/pages/), très utiles si votre site web est statique.
 
