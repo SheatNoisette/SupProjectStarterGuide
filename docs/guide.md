@@ -43,10 +43,11 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 * __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
 Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [Photon](https://www.photonengine.com/en-us/Photon) peuvent vous aider. Celle-ci dispose de nombreux tutoriels et d'une documentation correcte.
 
-* __N'utilisez pas UNet.__ [UNet est abandonné](https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/), il est possible que des fonctionnalitées ne fonctionne plus du jour au lendemain. [Unity 2019.4 est la dernière version à supporter UNet](https://support.unity3d.com/hc/en-us/articles/360001252086-UNet-Deprecation-FAQ), si vous utilisez une version LTS (Support à long terme d'Unity pour les gros projets), il est fortement recommandé de migrer.
+* __N'utilisez pas UNet.__ [UNet est abandonné](https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/), il est possible que des fonctionnalitées ne fonctionnent plus du jour au lendemain. [Unity 2019.4 est la dernière version à supporter UNet](https://support.unity3d.com/hc/en-us/articles/360001252086-UNet-Deprecation-FAQ), si vous utilisez une version LTS (Support à long terme d'Unity pour les gros projets), il est fortement recommandé de migrer.
+
 ### 1.5 Unity
 
-* __Évitez d’intégrer des assets venant de l’Asset Store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation si vous utilisez Unity Collab.
+* __Évitez d’intégrer des assets venant de l’Asset Store juste pour prendre un seul asset.__ Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation d'Unity Collab. Pensez à supprimer les assets que vous n'utilisez pas.
 
 * __Réaliser des assets pour votre jeu peut prendre du temps.__ Vous pouvez prendre les assets libres de droit sur des sites internets tel que [OpenGameArt](https://opengameart.org/) ou [FreeSound](https://freesound.org/). 
 
@@ -60,13 +61,13 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
   
 * __Évitez les abus de tutoriels.__ Lire la [documentation](https://docs.unity3d.com/Manual/index.html) officielle d'Unity peut parfois bien plus vous aider.
   
-* __Compilez régulièrement une version hors éditeur (“Stand-alone”).__ Ce qui peut marcher sur l’éditeur d’Unity ne fonctionnera peut-être pas sur une version compilée à part et vice versa.
+* __Compilez régulièrement une version hors éditeur (« Stand-alone »).__ Ce qui peut marcher sur l’éditeur d’Unity ne fonctionnera peut-être pas sur une version compilée à part et vice versa.
 
 * __Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.__ Il est recommandé de toujours posséder une version compilée et fonctionnelle de votre projet même si celle-ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombre : Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et à activer “Autobuild”. Dans le cas de l'utilisation d'un système de contrôle de versions, essayez de [revenir à une version antérieure](https://git-scm.com/docs/git-revert).
 
 * __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses.
   
-* __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal. Pensez à désactiver les ["lightmaps"](https://docs.unity3d.com/Manual/Lightmapping.html) et à retirer les cartes de jeu que vous n'utilisez pas afin d'accélérer la compilation de dernière minute de votre jeu.
+* __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal. Pensez à désactiver les [« lightmaps »](https://docs.unity3d.com/Manual/Lightmapping.html) et à retirer les cartes de jeu que vous n'utilisez pas afin d'accélérer la compilation de dernière minute de votre jeu.
   
 * __Forcez vous à garder une structure de dossier cohérente.__ Un projet Unity peut aisément accumuler des centaines et centaines de fichiers. Il n’y a rien de plus énervant que d’avoir des assets en double ou des scripts dans des dossiers de modèles 3D. On s’y perd rapidement.
   
@@ -85,7 +86,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Il ne sert à rien d’optimiser prématurément votre code. Du code “qui marche” est également dangereux,__ c’est à dire du code qui est illisible mais fonctionnant correctement.
 
-* __Mélanger du F# et C# est une mauvaise idée.__ Le C# est le seul langage "officiel" d'Unity.
+* __Mélanger du C# et un autre langage est une mauvaise idée.__ Le C# est le seul langage «officiel» d'Unity.
 
 * __Commentez votre code.__
 
@@ -116,7 +117,7 @@ Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et d
   
 * __Testez votre présentation sur un projecteur.__ Votre présentation est peut être magnifique, mais n'est pas forcément lisible sur un projecteur. N'hésitez pas à vous déplacer au fond de la salle afin de vérifier la bonne lisibilité de votre présentation.
 
-* __Préparez vous également à présenter votre jeu en anglais.__ Même si vous n'êtes pas étudiant en section internationale, vous aurez à présenter une "seconde soutenance finale" plus courte et concentrée sur le jeu en lui-même comptant dans votre moyenne d'Anglais TIM.
+* __Préparez vous également à présenter votre jeu en anglais.__ Même si vous n'êtes pas étudiant en section internationale, vous aurez à présenter une « seconde soutenance finale » plus courte et concentrée sur le jeu en lui-même comptant dans votre moyenne d'Anglais TIM.
 
 ### 1.9 Le site internet
 
@@ -195,6 +196,6 @@ __Solution:__ Cliquer sur ‘Start now’ sur l’onglet Collab, Unity va réess
 
 ## 3. Licence
 
-Ce travail est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International".
+Ce travail est soumis à la licence « Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International ».
 
 Rédigé par [Benoît “SheatNoisette” M.](https://github.com/SheatNoisette) et [Luca “iralorucrie” Corrieri](https://github.com/corrieriluca).
