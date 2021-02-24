@@ -18,4 +18,4 @@ Remerciements particuliers à [EPITA.it](https://epita.it/) pour fournir gracieu
 
 ![Creative Commons](https://i.creativecommons.org/l/by-nc/4.0/88x31.png)
 
-Le document `Guide.md` est soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International" (CC BY NC 4.0). Une copie traduite en Français est fournie dans le document [LICENSE.md](LICENSE.md).
+Les documents Markdown contenus dans le dossier `docs/` sont soumis à la licence "Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International" (CC BY NC 4.0). Une copie traduite en Français est fournie dans le document [LICENSE.md](LICENSE.md).
