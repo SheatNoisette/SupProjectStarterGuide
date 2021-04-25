@@ -30,7 +30,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN ou Unity Collaborate. L’échange de clés USB est à proscrire, c’est une perte de temps.__ De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.
 
-* __Ne travaillez pas sur la branche principale (Git).__ Il est courant et “plus aisé” de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par personne.
+* __Ne travaillez pas sur la branche principale (Git).__ Il est courant et “plus aisé” de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par nouvelle fonctionnalité (Appelé « Feature branch »). Une fois la nouvelle fonctionnalité écrite, vous pouvez la fusionner avec la branche principale.
 
 * __Faites des push réguliers.__
 
@@ -38,7 +38,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 ### 1.4 Multijoueur
 
-* __Si votre projet possède un mode multijoueur, celui-ci doit être implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de fortes chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
+* __Si votre projet doit intégrer un mode multijoueur, celui-ci doit être implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de fortes chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
 
 * __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
 Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [Photon](https://www.photonengine.com/en-us/Photon) peuvent vous aider. Celle-ci dispose de nombreux tutoriels et d'une documentation correcte.
