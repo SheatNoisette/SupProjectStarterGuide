@@ -30,7 +30,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN ou Unity Collaborate. L’échange de clés USB est à proscrire, c’est une perte de temps.__ De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.
 
-* __Ne travaillez pas sur la branche principale (Git).__ Il est courant et “plus aisé” de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par nouvelle fonctionnalité (Appelé « Feature branch »). Une fois la nouvelle fonctionnalité écrite, vous pouvez la fusionner avec la branche principale.
+* __Ne travaillez pas sur la branche principale (Git).__ Il est courant et « plus aisé » de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par nouvelle fonctionnalité (Appelée « Feature branch »). Une fois la nouvelle fonctionnalité écrite, vous pouvez la fusionner avec la branche principale.
 
 * __Faites des push réguliers.__
 
