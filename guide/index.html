@@ -1,0 +1,1002 @@
+
+
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Un guide pour bien gérer son projet de S2 à EPITA">
+      
+      
+        <link rel="canonical" href="https://s2guide.epita.it/guide/">
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copier dans le presse-papier">
+      
+        <meta name="lang:clipboard.copied" content="Copié dans le presse-papier">
+      
+        <meta name="lang:search.language" content="fr">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Aucun document trouvé">
+      
+        <meta name="lang:search.result.one" content="1 document trouvé">
+      
+        <meta name="lang:search.result.other" content="# documents trouvés">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.2">
+    
+    
+      
+        <title>Guide - Projet de S2 : Guide de survie</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.30686662.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.corrieri.fr/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#projet-informatique-guide-de-survie" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://s2guide.epita.it/" title="Projet de S2 : Guide de survie" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Projet de S2 : Guide de survie
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Guide
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Taper pour démarrer la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/SheatNoisette/SupProjectStarterGuide/" title="Aller au dépôt" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    SheatNoisette/SupProjectStarterGuide
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://s2guide.epita.it/" title="Projet de S2 : Guide de survie" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Projet de S2 : Guide de survie
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/SheatNoisette/SupProjectStarterGuide/" title="Aller au dépôt" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    SheatNoisette/SupProjectStarterGuide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Guide
+      </label>
+    
+    <a href="./" title="Guide" class="md-nav__link md-nav__link--active">
+      Guide
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table des matières</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-conseils-a-la-realisation-de-votre-projet-de-jeu-video" class="md-nav__link">
+    1. Conseils à la réalisation de votre projet de jeu vidéo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-pre-conception-du-jeu" class="md-nav__link">
+    1.1 Pré-conception du jeu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-gestion-dequipe" class="md-nav__link">
+    1.2 Gestion d’équipe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-controle-de-version-et-gestion-du-code-source" class="md-nav__link">
+    1.3 Contrôle de version et gestion du code source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-multijoueur" class="md-nav__link">
+    1.4 Multijoueur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-unity" class="md-nav__link">
+    1.5 Unity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-code" class="md-nav__link">
+    1.6 Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-rapports-de-soutenance" class="md-nav__link">
+    1.7 Rapports de soutenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-les-soutenances" class="md-nav__link">
+    1.8 Les soutenances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-le-site-internet" class="md-nav__link">
+    1.9 Le site internet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gestion-de-versions" class="md-nav__link">
+    2. Gestion de versions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-petit-guide-pratique-sur-git" class="md-nav__link">
+    2.1 Petit guide pratique sur Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-github-et-gitlab" class="md-nav__link">
+    2.2 GitHub et GitLab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-problemes-courants-avec-git-et-unity-collab" class="md-nav__link">
+    2.3 Problèmes courants avec Git et Unity Collab
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-et-gitlfs" class="md-nav__link">
+    Git et GitLFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unity-collaborate" class="md-nav__link">
+    Unity Collaborate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-licence" class="md-nav__link">
+    3. Licence
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../useful-links/" title="Liens utiles" class="md-nav__link">
+      Liens utiles
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../license/" title="Licence" class="md-nav__link">
+      Licence
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table des matières</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-conseils-a-la-realisation-de-votre-projet-de-jeu-video" class="md-nav__link">
+    1. Conseils à la réalisation de votre projet de jeu vidéo
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-pre-conception-du-jeu" class="md-nav__link">
+    1.1 Pré-conception du jeu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-gestion-dequipe" class="md-nav__link">
+    1.2 Gestion d’équipe
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-controle-de-version-et-gestion-du-code-source" class="md-nav__link">
+    1.3 Contrôle de version et gestion du code source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-multijoueur" class="md-nav__link">
+    1.4 Multijoueur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-unity" class="md-nav__link">
+    1.5 Unity
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-code" class="md-nav__link">
+    1.6 Code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-rapports-de-soutenance" class="md-nav__link">
+    1.7 Rapports de soutenance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-les-soutenances" class="md-nav__link">
+    1.8 Les soutenances
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-le-site-internet" class="md-nav__link">
+    1.9 Le site internet
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-gestion-de-versions" class="md-nav__link">
+    2. Gestion de versions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-petit-guide-pratique-sur-git" class="md-nav__link">
+    2.1 Petit guide pratique sur Git
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-github-et-gitlab" class="md-nav__link">
+    2.2 GitHub et GitLab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-problemes-courants-avec-git-et-unity-collab" class="md-nav__link">
+    2.3 Problèmes courants avec Git et Unity Collab
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-et-gitlfs" class="md-nav__link">
+    Git et GitLFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unity-collaborate" class="md-nav__link">
+    Unity Collaborate
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-licence" class="md-nav__link">
+    3. Licence
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/SheatNoisette/SupProjectStarterGuide/edit/master/docs/guide.md" title="Editer cette page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="projet-informatique-guide-de-survie">Projet Informatique : Guide de survie</h1>
+<p>Voici un petit condensé des problèmes que vous pourriez rencontrer lors de votre projet, la résolution de ces problèmes, des conseils et les choses à éviter. Ce guide n’est pas un document officiel, mais un retour d’expérience. Lire ceci vous permettra d’éviter au moins 75% des erreurs classiques.</p>
+<h2 id="1-conseils-a-la-realisation-de-votre-projet-de-jeu-video">1. Conseils à la réalisation de votre projet de jeu vidéo</h2>
+<p>Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une compilation de conseils mis en forme de liste afin d'être plus lisible.</p>
+<h3 id="11-pre-conception-du-jeu">1.1 Pré-conception du jeu</h3>
+<ul>
+<li>
+<p><strong>Une idée trop ambitieuse est une mauvaise idée.</strong> Vous ne chamboulerez pas le monde du jeu vidéo.</p>
+</li>
+<li>
+<p><strong>Un projet multijoueur en ligne peut s’avérer très complexe à mettre en place.</strong></p>
+</li>
+<li>
+<p><strong>Se mettre en équipe avec une personne hors de son cercle d’ami peut s’avérer plus productif.</strong></p>
+</li>
+<li>
+<p><strong>La première impression est importante, mais évitez de réaliser une coquille vide.</strong> La qualité de la modélisation 3D, des sprites 2D ou des cartes est tout aussi importante que le code. Essayez d'obtenir un bon équilibre entre le code et la qualité graphique.</p>
+</li>
+</ul>
+<h3 id="12-gestion-dequipe">1.2 Gestion d’équipe</h3>
+<ul>
+<li>
+<p><strong>Toujours aider une personne en difficulté.</strong> Bien sûr, celle-ci ne doit pas se reposer entièrement sur quelqu’un pour faire son travail à sa place.</p>
+</li>
+<li>
+<p><strong>Vous avez le droit de ne pas savoir comment réaliser une chose en particulier.</strong> Faites une rapide évaluation de chacun des membres de l'équipe afin d'exploiter les talents de chacun. Il est rare qu'une équipe soit parfaitement homogène.</p>
+</li>
+<li>
+<p><strong>Discord, IRC ou Slack ne permettent pas toujours de communiquer efficacement.</strong> Privilégiez un endroit calme où toute l’équipe peut s’installer et échanger, surtout lors des périodes de soutenances.</p>
+</li>
+<li>
+<p><strong>Réaliser un planning, même incomplet ou imprécis est essentiel.</strong> Il vous sera demandé d'en faire un dans votre cahier des charges au tout début de votre projet, alors autant essayer de s'y tenir un maximum.</p>
+</li>
+</ul>
+<h3 id="13-controle-de-version-et-gestion-du-code-source">1.3 Contrôle de version et gestion du code source</h3>
+<ul>
+<li>
+<p><strong>Utilisez un système de contrôle de versions tel que Git/Mercurial/SVN ou Unity Collaborate. L’échange de clés USB est à proscrire, c’est une perte de temps.</strong> De plus, si vos ordinateurs sont volés ou endommagés et que ne vous possédez pas une sauvegarde, vous avez tout perdu.</p>
+</li>
+<li>
+<p><strong>Ne travaillez pas sur la branche principale (Git).</strong> Il est courant et « plus aisé » de développer sur la branche principale. Or, dès que quelqu’un fait un commit et push, tout le monde perd ses changements lors d’une mise à jour. Il est recommandé de faire une branche par nouvelle fonctionnalité (Appelée « Feature branch »). Une fois la nouvelle fonctionnalité écrite, vous pouvez la fusionner avec la branche principale.</p>
+</li>
+<li>
+<p><strong>Faites des push réguliers.</strong></p>
+</li>
+<li>
+<p><strong>Fusionnez régulièrement les différentes branches de l’équipe.</strong> Si vous travaillez par branche, vous devez fusionner au minimum chaque semaine et vérifiez que tout fonctionne. Pensez aussi à mettre à jour ou à recréer des branches pour tous les membres de toute l’équipe.</p>
+</li>
+</ul>
+<h3 id="14-multijoueur">1.4 Multijoueur</h3>
+<ul>
+<li>
+<p><strong>Si votre projet doit intégrer un mode multijoueur, celui-ci doit être implémenté en priorité.</strong> La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de fortes chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.</p>
+</li>
+<li>
+<p><strong>Le mode à un seul joueur doit être un serveur local privé à un joueur.</strong>
+Utiliser des Sockets directement est du suicide. Des bibliothèques telle que <a href="https://www.photonengine.com/en-us/Photon">Photon</a> peuvent vous aider. Celle-ci dispose de nombreux tutoriels et d'une documentation correcte.</p>
+</li>
+<li>
+<p><strong>N'utilisez pas UNet.</strong> <a href="https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/">UNet est abandonné</a>, il est possible que des fonctionnalitées ne fonctionnent plus du jour au lendemain. <a href="https://support.unity3d.com/hc/en-us/articles/360001252086-UNet-Deprecation-FAQ">Unity 2019.4 est la dernière version à supporter UNet</a>, si vous utilisez une version LTS (Support à long terme d'Unity pour les gros projets), il est fortement recommandé de migrer.</p>
+</li>
+</ul>
+<h3 id="15-unity">1.5 Unity</h3>
+<ul>
+<li>
+<p><strong>Évitez d’intégrer des assets venant de l’Asset Store juste pour prendre un seul asset.</strong> Ceci alourdit considérablement la compilation, la taille du projet et le temps de synchronisation d'Unity Collab. Pensez à supprimer les assets que vous n'utilisez pas.</p>
+</li>
+<li>
+<p><strong>Réaliser des assets pour votre jeu peut prendre du temps.</strong> Vous pouvez prendre les assets libres de droit sur des sites internets tel que <a href="https://opengameart.org/">OpenGameArt</a> ou <a href="https://freesound.org/">FreeSound</a>. </p>
+</li>
+<li>
+<p><strong>Si vous avez des messages d’erreur sur l’outil de Collaboration d’Unity sans rien modifier, vérifiez si les serveurs sont hors-ligne et évitez de faire des push.</strong> Des doublons de commits peuvent apparaître.</p>
+</li>
+<li>
+<p><strong>Utilisez la dernière version stable de Unity lors de la création de votre projet.</strong></p>
+</li>
+<li>
+<p><strong>Ne changez pas de version en cours de route, Unity ne supporte pas l’importation d’ancien projet.</strong> Il sera nécessaire de refaire beaucoup de <em>prefabs</em> à la main. De plus, il est possible que Unity ne prenne plus en charge certaines fonctionnalités sur lesquelles vous vous reposez.</p>
+</li>
+<li>
+<p><strong>Utilisez des tutoriels utilisant une version très proche de la vôtre.</strong> Par exemple, si vous utilisez la version 2017.3, utiliser un tutoriel utilisant Unity 2017.2 peut être un bon choix. Il est recommandé d'éviter l'utilisation des des tutoriels utilisant une version supérieure à celle que vous utilisez, sauf si la fonctionnalité détaillée dans le tutoriel existe et fonctionne de la même façon que la version d'Unity que vous utilisez. </p>
+</li>
+<li>
+<p><strong>Évitez les abus de tutoriels.</strong> Lire la <a href="https://docs.unity3d.com/Manual/index.html">documentation</a> officielle d'Unity peut parfois bien plus vous aider.</p>
+</li>
+<li>
+<p><strong>Compilez régulièrement une version hors éditeur (« Stand-alone »).</strong> Ce qui peut marcher sur l’éditeur d’Unity ne fonctionnera peut-être pas sur une version compilée à part et vice versa.</p>
+</li>
+<li>
+<p><strong>Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.</strong> Il est recommandé de toujours posséder une version compilée et fonctionnelle de votre projet même si celle-ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombre : Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et à activer “Autobuild”. Dans le cas de l'utilisation d'un système de contrôle de versions, essayez de <a href="https://git-scm.com/docs/git-revert">revenir à une version antérieure</a>.</p>
+</li>
+<li>
+<p><strong>Concentrez vous sur la version Windows.</strong> Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses.</p>
+</li>
+<li>
+<p><strong>Anticipez le temps de compilation.</strong> Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal. Pensez à désactiver les <a href="https://docs.unity3d.com/Manual/Lightmapping.html">« lightmaps »</a> et à retirer les cartes de jeu que vous n'utilisez pas afin d'accélérer la compilation de dernière minute de votre jeu.</p>
+</li>
+<li>
+<p><strong>Forcez vous à garder une structure de dossier cohérente.</strong> Un projet Unity peut aisément accumuler des centaines et centaines de fichiers. Il n’y a rien de plus énervant que d’avoir des assets en double ou des scripts dans des dossiers de modèles 3D. On s’y perd rapidement.</p>
+</li>
+<li>
+<p><strong>Si votre jeu comporte beaucoup d'éléments graphiques ou de scripts, l'exportation WebGL peut casser.</strong> Vous pouvez tomber sur une erreur de manque de mémoire après quelques minutes de jeu.</p>
+</li>
+</ul>
+<h3 id="16-code">1.6 Code</h3>
+<ul>
+<li>
+<p><strong>Évitez de trop dépendre du code des autres.</strong> Essayez de séparer votre code du code des autres. Si une fonctionnalité repose beaucoup sur le travail d’un autre et que celui-ci s'effondre, vous aurez deux fois plus de boulot. Bien sûr, il y a des cas où utiliser le code des autres est indispensable.</p>
+</li>
+<li>
+<p><strong>Des fonctions sont plus coûteuses que d’autres.</strong> <code>Debug.Log</code>, <code>StartCoroutine</code> sont des fonction dites coûteuses, celles-ci peuvent ralentir parfois considérablement votre jeu sur de petites configuration. Utilisez un débogueur au maximum à la place de <code>Debug.Log</code>. De plus, si vous compilez votre jeu avec les <code>Debug.Log</code> cette fonction va écrire dans un fichier de Log, mobilisant inutilement le disque dur.
+<code>StartCoroutine</code> permet d’exécuter en différé une fonction. Cette fonction peut s’avérer suffisante pour ouvrir, par exemple, une porte quelques dizaine de secondes plus tard. Mais elle reste inadaptée pour des choses se répétant plusieurs fois par seconde. Une bonne alternative peut être <code>Delta.DeltaTime</code> : (<a href="https://docs.unity3d.com/ScriptReference/Time-deltaTime.html">https://docs.unity3d.com/ScriptReference/Time-deltaTime.html</a>, <a href="https://unity3d.com/fr/learn/tutorials/topics/scripting/delta-time">https://unity3d.com/fr/learn/tutorials/topics/scripting/delta-time</a>, <a href="https://pressstart.vip/tutorials/2018/07/20/45/building-a-timer.html">https://pressstart.vip/tutorials/2018/07/20/45/building-a-timer.html</a>).</p>
+</li>
+<li>
+<p><strong>Une classe comportant plus de 1000 lignes de script ou une fonction comptant plus d’une centaine de lignes nécessite probablement un re-découpage.</strong></p>
+</li>
+<li>
+<p><strong>N'hésitez pas à utiliser l’héritage.</strong> Une arme, un pistolet par exemple, peut être le fils d’une classe abstraite appelée “Arme”.</p>
+</li>
+<li>
+<p><strong>Il ne sert à rien d’optimiser prématurément votre code. Du code “qui marche” est également dangereux,</strong> c’est à dire du code qui est illisible mais fonctionnant correctement.</p>
+</li>
+<li>
+<p><strong>Mélanger du C# et un autre langage est une mauvaise idée.</strong> Le C# est le seul langage «officiel» d'Unity.</p>
+</li>
+<li>
+<p><strong>Commentez votre code.</strong></p>
+</li>
+</ul>
+<h3 id="17-rapports-de-soutenance">1.7 Rapports de soutenance</h3>
+<ul>
+<li>
+<p><strong>Ne sous estimez pas la durée de rédaction des rapports de soutenance.</strong> Pensez à commencer à rédiger le squelette du rapport au moins deux semaines à l'avance.</p>
+</li>
+<li>
+<p><strong>Une bibliographie ou des sources sont fortement recommandées.</strong></p>
+</li>
+<li>
+<p><strong>LaTeX est à la fois votre ami et votre pire ennemi.</strong> LaTeX met en forme automatiquement votre document. Il est recommandé de ne pas essayer de “forcer” une mise en forme particulière sauf si celui-ci génére mal une partie de votre document (un tableau par exemple).</p>
+</li>
+<li>
+<p><strong>Un dépôt Git, Mercurial ou SVN peut être très utile pour les rapports.</strong> En effet, ces outils peuvent être très puissants sur des fichiers textes. Dans la majorité des cas, il sera aisé de fusionner des branches. Une fusion manuelle est normalement simple. De plus, GitLab ou GitHub proposent des outils de fusions complets en ligne, il existe aussi le logiciel GitKraken pour le faire en local sans mettre directement la main à la pâte à l’aide de Vim ou Emacs. Mais si Git vous effraie, vous pouvez utiliser un éditeur de document LaTeX en ligne tel que <a href="https://fr.overleaf.com">Overleaf</a>.</p>
+</li>
+<li>
+<p><strong>Utiliser un convertisseur OpenDocument/Word/Google Doc vers LaTeX n’est pas une bonne idée.</strong> En revanche, vous pouvez rédiger votre document sur un logiciel de traitement de texte classique pour bénéficier d’un correcteur orthographique puis intégrer vos parties du rapport dans un document LaTeX.</p>
+</li>
+<li>
+<p><strong>Il est plus facile de créer, éditer et compiler des documents LaTeX sur un système Unix (GNU/Linux, BSD ou macOS) que sous Windows.</strong></p>
+</li>
+</ul>
+<h3 id="18-les-soutenances">1.8 Les soutenances</h3>
+<ul>
+<li>
+<p><strong>Des combinaisons de touches permettant de tricher sont recommandées.</strong> Si votre jeu est trop difficile, pensez à ajouter des codes de triche permettant de passer un niveau ou de gagner des vies. Cependant, n'en abusez pas, les examinateurs pourraient être amenés à penser que votre jeu ne fonctionne pas correctement.</p>
+</li>
+<li>
+<p><strong>Faites une démonstration de votre jeu dès la première soutenance.</strong> Celle-ci a généralement lieu avant ou après les midterms du S2, votre jeu peut ne pas encore être avancé et encore très brouillon, mais en faire une démonstration, aussi succincte soit-elle, reste essentiel pour illustrer vos propos.</p>
+</li>
+<li>
+<p><strong>Découpez logiquement votre démonstration.</strong> Si vous choisissez une démo-présentation pour la soutenance finale, c'est à dire que votre jeu est la présentation, décrivez les éléments du jeu dans l'ordre tel que vous le voyez. Présentez ce que le jury voit, introduisez au fur et à mesure les fonctionnalités de votre jeu. Un exemple : vous montrez que vous avez une caméra pouvant être déplacée avec la souris, ensuite que le joueur peut se déplacer et enfin courir. De plus il est important de scénariser votre démonstration afin d'éviter les blancs ou les oublis.
+Prenez plusieurs ordinateurs avec vous, chacun disposant d'une copie du jeu et des éventuelles diapositives. Pensez également à la présentation du mode multijoueur.</p>
+</li>
+<li>
+<p><strong>Beaucoup de projecteurs et de salles sont toujours câblés en VGA.</strong> Pensez à amener un adaptateur HDMI / DisplayPort vers VGA, ce connecteur commence à s'effacer des ordinateurs portables.</p>
+</li>
+<li>
+<p><strong>Testez votre présentation sur un projecteur.</strong> Votre présentation est peut être magnifique, mais n'est pas forcément lisible sur un projecteur. N'hésitez pas à vous déplacer au fond de la salle afin de vérifier la bonne lisibilité de votre présentation.</p>
+</li>
+<li>
+<p><strong>Préparez vous également à présenter votre jeu en anglais.</strong> Même si vous n'êtes pas étudiant en section internationale, vous aurez à présenter une « seconde soutenance finale » plus courte et concentrée sur le jeu en lui-même comptant dans votre moyenne d'Anglais TIM.</p>
+</li>
+</ul>
+<h3 id="19-le-site-internet">1.9 Le site internet</h3>
+<p>Le site internet n’est pas un élément à négliger pour votre projet. Celui-ci peut être statique ou dynamique. Un site statique n’est pas modifiable sans toucher le code source. En revanche, un site dynamique permet d'être modifié sans intervention sur le code source. Pour réaliser votre site internet, vous pouvez utiliser un outil tel que Hugo, Hexo, Gatsby ou Jekyll permettant de réaliser un site statique. Créer un outil sur mesure à partir de zéro n’est pas obligatoire et peut prendre du temps. Le principal avantage de ces générateurs de sites internet statiques est de pouvoir rédiger le contenu de votre site dans un langage de balisage plus pratique que l'HTML tel que le <a href="https://fr.wikipedia.org/wiki/Markdown">Markdown</a> et donc de ne pas nécessiter de grosses connaissances en HTML/CSS. Un cours interactif d’introduction est accessible ici : <a href="https://www.markdowntutorial.com/">www.markdowntutorial.com</a>.
+Attention, le Markdown est une spécification ouverte. Chaque développeur est libre de l’implémenter comme il le souhaite. En voici un court rappel:</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Sortie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code># Titre</code></td>
+<td><h1 style="margin: 0;">Titre</h1></td>
+</tr>
+<tr>
+<td><code>## Sous-titre</code></td>
+<td><h2 style="margin: 0;">Sous-titre</h2></td>
+</tr>
+<tr>
+<td><code>### Sous-sous-titre</code></td>
+<td><h3 style="margin: 0;">Sous-sous-titre</h3></td>
+</tr>
+<tr>
+<td><code>Texte sans mise en forme particulière</code></td>
+<td>Texte sans mise en forme particulière</td>
+</tr>
+<tr>
+<td><code>*Texte en italique*</code> ou <code>_Texte en italique_</code></td>
+<td><em>Texte en italique</em></td>
+</tr>
+<tr>
+<td><code>**Texte en gras**</code> ou <code>__Texte en gras__</code></td>
+<td><strong>Texte en gras</strong></td>
+</tr>
+<tr>
+<td><code>***Texte en gras et en italique***</code></td>
+<td><strong><em>Texte en gras et en italique</em></strong></td>
+</tr>
+</tbody>
+</table>
+<p>Il est également possible de combiner plusieurs tags Markdown en fonction des implémentations : <code>**_Texte en gras et en italique_**</code></p>
+<p>Vous pouvez louer un serveur web pour héberger votre site internet. Vous pouvez vous tourner vers des alternatives gratuites tel que <a href="https://www.dyjix.eu">Dyjix</a> ou <a href="https://www.alwaysdata.com/fr/">AlwaysData</a>. Enfin, considérez <a href="https://pages.github.com">GitHub Pages</a> et <a href="https://about.gitlab.com/product/pages/">GitLab Pages</a>, très utiles si votre site web est statique.</p>
+<p>Si vous êtes bricoleur, vous pouvez vous même héberger votre site sur un ordinateur. Faites juste attention à la bande passante, la sécurité de votre serveur et à sa consommation d'électricité. Un Raspberry Pi ou équivalent peut largement suffire. L'achat d'un nom de domaine pour votre équipe n'est pas nécessaire. Il existe des noms de domaines gratuits profitant d'extensions un peu exotiques tels que ceux proposés par <a href="https://www.freenom.com/">Freenom</a>.</p>
+<p><strong>Remarques :</strong></p>
+<ul>
+<li>
+<p><strong>Pensez à faire des sauvegardes régulières de votre site.</strong> Un accident de votre côté ou de votre hébergeur peut tout à fait arriver.</p>
+</li>
+<li>
+<p><strong>Prendre un serveur dédié ou virtuel (VPS) pour votre site internet est inutile.</strong> Sauf si vous souhaitez réutiliser ce serveur plus tard.</p>
+</li>
+</ul>
+<h2 id="2-gestion-de-versions">2. Gestion de versions</h2>
+<h3 id="21-petit-guide-pratique-sur-git">2.1 Petit guide pratique sur Git</h3>
+<p>Personne n’est parfaitement à l’aise sous Git. Voici un rappel des commandes les plus utilisées.</p>
+<table>
+<thead>
+<tr>
+<th>Commande(s)</th>
+<th>Effet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git add .</code></td>
+<td>Ajouter tous les nouveaux fichiers et les fichiers modifiés.</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Voir les fichiers modifiés ou nouvellement créés.</td>
+</tr>
+<tr>
+<td><code>git commit -m “MESSAGE”</code></td>
+<td>Créer un nouveau commit étiqueté du message “MESSAGE” (Sans les “)</td>
+</tr>
+<tr>
+<td><code>git branch</code></td>
+<td>Voir toutes les branches locales, c’est à dire les branches stockés sur votre ordinateur.</td>
+</tr>
+<tr>
+<td><code>git checkout -b BRANCHE</code></td>
+<td>Créer une branche locale possédant le nom BRANCHE basée sur la branche actuelle ce qu'il sera nécéssaire de faire de nombreuses fois si vous suivez ce guide.</td>
+</tr>
+<tr>
+<td><code>git push origin BRANCHE</code></td>
+<td>pour publier les changements.</td>
+</tr>
+<tr>
+<td><code>git branch -d BRANCHE</code></td>
+<td>Supprimer la branche ‘BRANCHE’.</td>
+</tr>
+</tbody>
+</table>
+<p>Pour plus d’informations, veuillez consulter <a href="https://git-scm.com/docs">le manuel de Git</a>.</p>
+<h3 id="22-github-et-gitlab">2.2 GitHub et GitLab</h3>
+<p>Pour votre projet, vous allez probablement utiliser Git. Git permet de travailler de pair-à-pair, mais par sécurité, il est recommandé de choisir une solution d'hébergement Git pour le code source de votre projet. Les deux plus grandes plateformes sont GitHub et GitLab. Chacune de ces plateformes a ses avantages mais aussi ses inconvénients. La plus populaire, GitHub, héberge plus de 69 millions de projets.</p>
+<p>Si l'on en reste strictement à la version gratuite de ces deux services (largement suffisante pour un projet scolaire en groupe), la différence majeure entre GitHub et GitLab est que ce dernier permet d'en faire un peu plus. Depuis peu la création de repos privées sur GitHub est devenue gratuite et illimitée mais uniquement pour les utilisateurs seuls (et jusqu'à trois collaborateurs) mais sur GitLab, non seulement la création de repos publiques et privées est illimitée mais elle est aussi ouverte aux organisations (groupe d'utilisateurs avec nombre de collaborateurs illimité) ce qui est plus pratique pour un travail en groupe. L'autre avantage majeur de GitLab est l'intégration en continue (ou CI pour <em>Continuous Integration</em>), même si celle-ci n'est pas vraiment utile avec Unity, elle peut l'être pour un site web ou pour vos différents rapports rédigés en LaTeX. La CI intégrée à GitLab permet d'éxecuter et déployer votre application automatiquement à chaque mise à jour de votre code, ce qui peut s'avérer très utile pour déployer un site web statique sans avoir à l'héberger de manière classique. À noter que GitHub peut également héberger des sites web statiques (avec GitHub Pages) et faire de la CI (via des services tiers ou via <a href="https://fr.github.com/features/actions">Github Actions</a>.</p>
+<p>En résumé, le choix entre GitHub et GitLab est avant tout une question de <strong>préférence</strong>, tout ce qui peut être fait sur l'un des deux services peut aussi être fait sur l'autre et inversement. La formule gratuite de GitLab en propose un peu plus que celle de GitHub, mais cela ne vous empêchera pas de collaborer convenablement si vous préférez utiliser ce dernier.</p>
+<h3 id="23-problemes-courants-avec-git-et-unity-collab">2.3 Problèmes courants avec Git et Unity Collab</h3>
+<h4 id="git-et-gitlfs">Git et GitLFS</h4>
+<p><strong>Problème:</strong> Problème de pointeur de fichiers. Des fichiers disparaissent ou sont vides.</p>
+<p><strong>Solution 1:</strong> Supprimer et ajouter manuellement les fichiers à nouveau.
+<strong>Attention :</strong> Ceci ne corrige pas nécessairement le problème.</p>
+<p><strong>Solution 2:</strong> Refaire un repo et vérifier que tous les membres de l’équipe ont l’extension GitLFS correctement installée.</p>
+<h4 id="unity-collaborate">Unity Collaborate</h4>
+<p><strong>Problème :</strong> Tout le monde peut publier ses changements. Mais il arrive que Unity perde le projet en cours de route.
+<strong>Solution :</strong> Vérifier sur le Dashboard Unity si l’outil Collaborate est bel et bien activé.</p>
+<p><strong>Problème :</strong> Unity perd le projet en route, mais Collaborate est bel et bien activé.
+<strong>Solution :</strong> Désactiver et réactiver Collaborate.</p>
+<p><strong>Problème:</strong> Unity semble avoir perdu la collaboration.
+<strong>Solution:</strong> Cliquer sur ‘Start now’ sur l’onglet Collab, Unity va réessayer de vérifier les changements.</p>
+<h2 id="3-licence">3. Licence</h2>
+<p>Ce travail est soumis à la licence « Licence publique Creative Commons Attribution - Utilisation non commerciale 4.0 International ».</p>
+<p>Rédigé par <a href="https://github.com/SheatNoisette">Benoît “SheatNoisette” M.</a> et <a href="https://github.com/corrieriluca">Luca “iralorucrie” Corrieri</a>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Introduction
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../useful-links/" title="Liens utiles" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Liens utiles
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            CC BY NC 4.0 - Benoît M. et Luca C. - 2022
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c648116f.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.fr.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
