@@ -4,7 +4,7 @@ site_url: https://s2guide.epita.it/
 
 repo_name: SheatNoisette/SupProjectStarterGuide
 repo_url: https://github.com/SheatNoisette/SupProjectStarterGuide
-copyright: 'CC BY NC 4.0 - Benoît M. et Luca C. - 2021'
+copyright: 'CC BY NC 4.0 - Benoît M. et Luca C. - 2022'
 
 theme:
     name: 'material'
