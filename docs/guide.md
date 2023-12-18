@@ -10,7 +10,7 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Une idée trop ambitieuse est une mauvaise idée.__ Vous ne chamboulerez pas le monde du jeu vidéo.
 
-* __Un projet multijoueur en ligne peut s’avérer très complexe à mettre en place.__
+* __Le multijoueurs de votre projet sera quelque chose de long à mettre en place.__ Anticiper le au maximum pour ne pas prendre trop de retard.
   
 * __Se mettre en équipe avec une personne hors de son cercle d’ami peut s’avérer plus productif.__
   
@@ -22,9 +22,11 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 * __Vous avez le droit de ne pas savoir comment réaliser une chose en particulier.__ Faites une rapide évaluation de chacun des membres de l'équipe afin d'exploiter les talents de chacun. Il est rare qu'une équipe soit parfaitement homogène.
 
-* __Discord, IRC ou Slack ne permettent pas toujours de communiquer efficacement.__ Privilégiez un endroit calme où toute l’équipe peut s’installer et échanger, surtout lors des périodes de soutenances.
+* __Discord, IRC ou Slack ne permettent pas toujours de communiquer efficacement.__ Privilégiez un endroit calme où toute l’équipe peut s’installer et échanger, surtout lors des périodes de soutenances. Vous pouvez tout de même utilier ces platformes, utiles pour échanger à distance en cas de besoins et centraliser des informations utiles concernant votre projet.
   
 * __Réaliser un planning, même incomplet ou imprécis est essentiel.__ Il vous sera demandé d'en faire un dans votre cahier des charges au tout début de votre projet, alors autant essayer de s'y tenir un maximum.
+
+* __Anticiper au maximum pour ne prendre aucun retard.__ Vous réaliserez ce projet en parallèle de vos cours. Il faut donc être suffisamment organisé au sein de votre groupe pour ne prendre aucun retard et pouvoir présenter lors des soutenances ce sur quoi vous vous étiez engagé lors du dépôt de votre cahier des charges.
 
 ### 1.3 Contrôle de version et gestion du code source
 
@@ -38,10 +40,9 @@ Réaliser un jeu vidéo est difficile, pour vous faire gagner du temps voici une
 
 ### 1.4 Multijoueur
 
-* __Si votre projet doit intégrer un mode multijoueur, celui-ci doit être implémenté en priorité.__ La plus grosse erreur lors de la réalisation d’un jeu possédant un mode multijoueur est de l’implémenter au milieu du développement de votre jeu. Ainsi, il y a de fortes chances que votre projet soit scindé en deux: Une partie à un seul joueur et une autre intégrant les fonctionnalités multijoueur. Cette dernière aura toujours du retard sur la version à un seul joueur. Sans compter la fragmentation du code.
+* __Votre projet doit implémenter un mode multijoueur, faites-le en priorité !__ La plus grosse erreur est de réaliser ce mode multijoueur au milieu du développement de votre projet. Ainsi, vous vous retrouverez avec un code scindé en deux (une partie multi et une partie solo) ce qui va vite devenir compliqué à gérer. La bibliothèque [Photon](https://www.photonengine.com/en-us/Photon) est sans doute la plus simple à utiliser. Évitez l'utilisation de Mirror, souvent plus complexe, moins supporté et avec une documentation pas forcément à jour.
 
-* __Le mode à un seul joueur doit être un serveur local privé à un joueur.__
-Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [Photon](https://www.photonengine.com/en-us/Photon) peuvent vous aider. Celle-ci dispose de nombreux tutoriels et d'une documentation correcte.
+* __Le mode à un seul joueur doit être un serveur local privé pour un joueur.__ Utiliser des Sockets directement est risqué. Il est préférable de privilégier l'utilisation de Photon [Photon](https://www.photonengine.com/en-us/Photon), car c'est gratuit et sa documentation est suffisamment complète.
 
 * __N'utilisez pas UNet.__ [UNet est abandonné](https://blogs.unity3d.com/2018/08/02/evolving-multiplayer-games-beyond-unet/), il est possible que des fonctionnalitées ne fonctionnent plus du jour au lendemain. [Unity 2019.4 est la dernière version à supporter UNet](https://support.unity3d.com/hc/en-us/articles/360001252086-UNet-Deprecation-FAQ), si vous utilisez une version LTS (Support à long terme d'Unity pour les gros projets), il est fortement recommandé de migrer.
 
@@ -65,7 +66,7 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Sauvegardez votre projet compilé et ne faites pas confiance à l’éditeur de Unity.__ Il est recommandé de toujours posséder une version compilée et fonctionnelle de votre projet même si celle-ci est ancienne. Si par malheur, vous n’avez plus de temps pour implémenter une fonctionnalité et que votre jeu ne fonctionne plus du tout, vous devez posséder une version jouable de votre jeu. Si vous utilisez les services de Unity proposant le Cloud Build, vous n’avez pas de soucis à vous faire, mais vérifiez régulièrement si la compilation se passe sans encombre : Il est possible que votre jeu ne compile plus du tout. Pensez à activer les notifications par mail et à activer “Autobuild”. Dans le cas de l'utilisation d'un système de contrôle de versions, essayez de [revenir à une version antérieure](https://git-scm.com/docs/git-revert).
 
-* __Concentrez vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien de vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux boîteuses.
+* __Concentrez-vous sur la version Windows.__ Unity est un moteur de jeu multiplateforme, mais rien ne vous empêche d’adapter votre jeu sur d’autres supports. Une version Windows pleinement fonctionnelle vaut plus que des versions Windows, Mac et Linux incomplètes. Le projet final sera testé sur Windows (et présenté sur cette même plateforme), la portabilité vers d'autres systèmes n'est qu'une amélioration non essentielle.
   
 * __Anticipez le temps de compilation.__ Au fur et à mesure du développement de votre projet, votre jeu va s’alourdir. La compilation, logiquement, va être de plus en plus longue. Compiler une version de démonstration au dernier moment peut être fatal. Pensez à désactiver les [« lightmaps »](https://docs.unity3d.com/Manual/Lightmapping.html) et à retirer les cartes de jeu que vous n'utilisez pas afin d'accélérer la compilation de dernière minute de votre jeu.
   
@@ -88,17 +89,17 @@ Utiliser des Sockets directement est du suicide. Des bibliothèques telle que [P
 
 * __Mélanger du C# et un autre langage est une mauvaise idée.__ Le C# est le seul langage «officiel» d'Unity.
 
-* __Commentez votre code.__
+* __Commentez votre code.__ Un code non commenté entraînera une grande perte de temps pour les autres membres de votre groupe qui passeront derrière vous !
 
 ### 1.7 Rapports de soutenance
 
 * __Ne sous estimez pas la durée de rédaction des rapports de soutenance.__ Pensez à commencer à rédiger le squelette du rapport au moins deux semaines à l'avance.
   
-* __Une bibliographie ou des sources sont fortement recommandées.__
+* __Une bibliographie ou des sources sont fortement recommandées.__ Elles peuvent être constituer des sources de vos asset utilisé pour votre projet, des sources d'inspiration ou même des tutoriels qui vous ont été utiles à la réalisation de certaines tâches.
   
 * __LaTeX est à la fois votre ami et votre pire ennemi.__ LaTeX met en forme automatiquement votre document. Il est recommandé de ne pas essayer de “forcer” une mise en forme particulière sauf si celui-ci génére mal une partie de votre document (un tableau par exemple).
 
-* __Un dépôt Git, Mercurial ou SVN peut être très utile pour les rapports.__ En effet, ces outils peuvent être très puissants sur des fichiers textes. Dans la majorité des cas, il sera aisé de fusionner des branches. Une fusion manuelle est normalement simple. De plus, GitLab ou GitHub proposent des outils de fusions complets en ligne, il existe aussi le logiciel GitKraken pour le faire en local sans mettre directement la main à la pâte à l’aide de Vim ou Emacs. Mais si Git vous effraie, vous pouvez utiliser un éditeur de document LaTeX en ligne tel que [Overleaf](https://fr.overleaf.com).
+* __Un dépôt Git, Mercurial ou SVN peut être très utile pour les rapports.__ En effet, ces outils peuvent être très puissants sur des fichiers textes. Dans la majorité des cas, il sera aisé de fusionner des branches. Une fusion manuelle est normalement simple. De plus, GitLab ou GitHub proposent des outils de fusion complets en ligne, il existe aussi le logiciel GitKraken pour le faire en local sans mettre directement la main à la pâte à l’aide de Vim ou Emacs. Mais si Git vous effraie, vous pouvez utiliser un éditeur de document LaTeX en ligne tel que [Overleaf](https://fr.overleaf.com) (attention à la version gratuite qui ne prend en charge qu'un nombre limité de collaborateurs sur un projet).
 
 * __Utiliser un convertisseur OpenDocument/Word/Google Doc vers LaTeX n’est pas une bonne idée.__ En revanche, vous pouvez rédiger votre document sur un logiciel de traitement de texte classique pour bénéficier d’un correcteur orthographique puis intégrer vos parties du rapport dans un document LaTeX.
 
